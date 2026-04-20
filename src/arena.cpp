@@ -7,7 +7,7 @@ void Arena::battle(Creature &a, Creature &b)
     std::cout << a.name << " vs " << b.name << std::endl;
 
     int turn = 1;
-
+    
     while (a.isAlive() && b.isAlive())
     {
         std::cout << "\nTurn " << turn << std::endl;
