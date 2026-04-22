@@ -1,7 +1,6 @@
 #ifndef CREATURE_H
 #define CREATURE_H
 
-#include <iostream>
 #include <string>
 #include <iostream>
 
@@ -57,24 +56,6 @@ public:
         }
         return true;
     }
-
 };
-
-inline bool validate(Creature &c)
-{
-    if (c.health <= 0 || c.health > 120)
-    {
-        std::cerr << "Error: " << c.name << " has invalid health. Health must be > 0 or < 120" << std::endl;
-        return false;
-    }
-
-    if (c.damage <= 0 || c.damage > 20)
-    {
-        std::cerr << "Error: " << c.name << " has invalid damage. Damage must be > 0 or < 20" << std::endl;
-        return false;
-    }
-
-    return true;
-}
 
 #endif
